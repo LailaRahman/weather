@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(209, 209, 226);
+  }
+  
+  
+  .app {
+    background-color: lightblue;
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 30px;
+    box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08)
+    
+  }
+  
+  .search-form-input {
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+  
+  }
+  
+  .search-form-button{
+    padding:10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+  }
