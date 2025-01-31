@@ -15,7 +15,6 @@ function refreshWeather(response) {
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   }
   
-  
   function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -42,10 +41,7 @@ function refreshWeather(response) {
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(refreshWeather);
   }
-    
-    
-    
-  
+
   function handleSearchSubmit(event){
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
@@ -53,7 +49,6 @@ function refreshWeather(response) {
     cityElement.innerHTML = searchInput.value;
     searchCity(searchInput.value);
   }
-  
   
   let searchFormElement = document.querySelector("#search-form");
   searchFormElement.addEventListener("submit", handleSearchSubmit);
